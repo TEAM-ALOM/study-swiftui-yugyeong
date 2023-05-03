@@ -10,31 +10,39 @@ import SwiftUI
 struct ContentView : View {
   var body: some View {
       NavigationView {
-          VStack{
-              HStack {
-                Button("추천") {
-                }
-                  Button("랭킹") {
+          ScrollView(.horizontal){
+              VStack{
+                  HStack {
+                      Button("NEW") {
+                      }
+                      Button("전체") {
+                      }
+                      Button("상의") {
+                      }
+                      Button("아우터") {
+                      }
+                      Button("바지") {
+                      }
+                      Button("원피스") {
+                      }
+                      Button("스커트") {
+                      }
+                      Button("스니커즈") {
+                      }
                   }
-                  Button("스타일") {
-                  }
-                  Button("세일") {
-                  }
-                  Button("뷰티") {
-                  }
-                  Button("이벤트") {
-                  }
-                  
-                Spacer()
-                Spacer()
-
+                  .buttonStyle(.borderedProminent)
+                  .tint(.black)
               }
+              
           }.navigationBarTitle("MUSINSA")
               .toolbar {
                   ToolbarItem {
                       Button("Search") {}
+                          .buttonStyle(.bordered)
+                          .tint(.black)
                   }
               }
+          
       }
       
       .padding()
