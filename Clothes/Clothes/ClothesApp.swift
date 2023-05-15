@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-var cnt : Int = 0
-
 @main
 struct ClothesApp: App {
     var body: some Scene {
